@@ -1,10 +1,24 @@
 package com.github.thfm4rt1n5.entities;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Variety {
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Embeddable
+public class Variety implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+
+	@Column(name = "name", length = 150, nullable = false)
 	private String name;
 
 	public Variety() {
@@ -24,11 +38,6 @@ public class Variety {
 	}
 
 	@Override
-	public String toString() {
-		return "Variety [id=" + id + ", name=" + name + "]";
-	}
-
-	@Override
 	public int hashCode() {
 		return Objects.hash(id);
 	}
@@ -43,6 +52,11 @@ public class Variety {
 			return false;
 		Variety other = (Variety) obj;
 		return id == other.id;
+	}
+
+	@Override
+	public String toString() {
+		return "Variety [id=" + id + ", name=" + name + "]";
 	}
 
 }

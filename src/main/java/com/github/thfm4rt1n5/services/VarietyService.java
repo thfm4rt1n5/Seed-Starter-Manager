@@ -18,6 +18,6 @@ public class VarietyService {
 	}
 	
 	public Variety findById(final int id) {
-		return repository.findById(id);
+		return repository.findById(id).get();
 	}
 }

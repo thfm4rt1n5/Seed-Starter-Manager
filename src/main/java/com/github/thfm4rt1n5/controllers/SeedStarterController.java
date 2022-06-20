@@ -1,4 +1,4 @@
-package com.github.thfm4rt1n5.controller;
+package com.github.thfm4rt1n5.controllers;
 
 import java.util.Arrays;
 import java.util.Calendar;

@@ -1,4 +1,4 @@
-package com.github.thfm4rt1n5.configs;
+package com.github.thfm4rt1n5.formatters;
 
 import java.text.ParseException;
 import java.util.Locale;

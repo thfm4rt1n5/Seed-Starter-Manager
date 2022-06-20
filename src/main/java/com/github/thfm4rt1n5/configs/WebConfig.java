@@ -14,6 +14,9 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
 
+import com.github.thfm4rt1n5.formatters.DateFormatter;
+import com.github.thfm4rt1n5.formatters.VarietyFormatter;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan

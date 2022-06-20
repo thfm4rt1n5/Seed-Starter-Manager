@@ -22,6 +22,6 @@ public class SeedStarterService {
 	}
 	
 	public void add(final SeedStarter seedStarter) {
-		repository.add(seedStarter);
+		repository.save(seedStarter);
 	}
 }
